@@ -11,12 +11,16 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            List<PhysicalProductModel> cart = AddSampleData();
+            List<IProductModel> cart = AddSampleData();
             CustomerModel customer = GetCustomer();
 
-            foreach (PhysicalProductModel prod in cart)
+            foreach (IProductModel prod in cart)
             {
                 prod.ShipItem(customer);
+                if(prod is DigitalProductModel digital) // if prod is a a DigitalProductModel, store prod in var digital - runs the next line only if this condition is met
+                {
+                    Console.WriteLine($"For the {digital.Title} you have {digital.TotalDownloadsLeft} downloads left . ");
+                }
             }
 
             Console.ReadLine();
@@ -34,13 +38,15 @@ namespace ConsoleUI
             };
         }
 
-        private static List<PhysicalProductModel> AddSampleData()
+        private static List<IProductModel> AddSampleData()
         {
-            List<PhysicalProductModel> output = new List<PhysicalProductModel>();
+            List<IProductModel> output = new List<IProductModel>();
 
             output.Add(new PhysicalProductModel { Title = "Nerf Football" });
             output.Add(new PhysicalProductModel { Title = "IAmTimCorey T-Shirt" });
             output.Add(new PhysicalProductModel { Title = "Hard Drive" });
+            output.Add(new DigitalProductModel { Title = "Lesson Source Code" });
+            output.Add(new CourseProductModel { Title = ".Net Core Start to Finish" });
 
             return output;
         }

@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DemoLibrary\DemoLibrary.csproj">
-      <Project>{68ABF199-736A-46B1-B464-37A015FE9307}</Project>
+      <Project>{68abf199-736a-46b1-b464-37a015fe9307}</Project>
       <Name>DemoLibrary</Name>
     </ProjectReference>
   </ItemGroup>

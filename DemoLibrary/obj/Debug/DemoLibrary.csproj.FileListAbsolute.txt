@@ -1,0 +1,6 @@
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\bin\Debug\DemoLibrary.dll
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\bin\Debug\DemoLibrary.pdb
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\obj\Debug\DemoLibrary.csprojAssemblyReference.cache
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\obj\Debug\DemoLibrary.dll
+C:\Users\daniel.seong\SideProjects\CsharpInterface\DemoLibrary\obj\Debug\DemoLibrary.pdb
